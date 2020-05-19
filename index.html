@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
-    <title>form</title>
+    <title> form </title>
 </head>
 
 <body>
@@ -114,64 +114,64 @@
 
 
 
-    
 
-        $('#myForm').validator( 
-                feilds = {
-            "name": {
-                'valueType': 'text',
-                'required': true
-            },
-            "farsi": {
-                'valueType': 'persianChar',
-                'required': false
-            },
-            "english": {
-                'valueType': 'englishChar',
-                'required': false
-            },
-            "mobile": {
-                'valueType': 'mobileNumber',
-                'required': false
-            },
-            "email": {
-                'valueType': 'emailAaddress',
-                'required': true
-            },
-            "password": {
-                'valueType': 'password',
-                'required': true
-            }
-        },
 
-         messages = {
-            "name": {
-                'valueType': "*name is not valid!",
-                'required': "*name is required"
+        $('#myForm').validator(
+            feilds = {
+                "name": {
+                    'valueType': 'text',
+                    'required': true
+                },
+                "farsi": {
+                    'valueType': 'persianChar',
+                    'required': false
+                },
+                "english": {
+                    'valueType': 'englishChar',
+                    'required': false
+                },
+                "mobile": {
+                    'valueType': 'mobileNumber',
+                    'required': false
+                },
+                "email": {
+                    'valueType': 'emailAaddress',
+                    'required': true
+                },
+                "password": {
+                    'valueType': 'password',
+                    'required': true
+                }
             },
-            "farsi": {
-                'valueType': "*enter farsi charachter!",
-                'required': "*name is required"
-            },
-            "english": {
-                'valueType': "*enter english charachter!",
-                'required': "*name is required"
-            },
-            "mobile": {
-                'valueType': "*mobile number is not valid!",
-                'required': "*mobile is required"
-            },
-            "email": {
-                'valueType': "*email address is not valid!",
-                'required': "*email is required"
-            },
-          
-            "password": {
-                'valueType': "*password is not valid! should contain at least one digit,at least one lower case ,at least one upper case,at least 8 from the mentioned characters",
-                'required': "*password is required"
-            }
 
-        });
+            messages = {
+                "name": {
+                    'valueType': "*name is not valid!",
+                    'required': "*name is required"
+                },
+                "farsi": {
+                    'valueType': "*enter farsi charachter!",
+                    'required': "*name is required"
+                },
+                "english": {
+                    'valueType': "*enter english charachter!",
+                    'required': "*name is required"
+                },
+                "mobile": {
+                    'valueType': "*mobile number is not valid!",
+                    'required': "*mobile is required"
+                },
+                "email": {
+                    'valueType': "*email address is not valid!",
+                    'required': "*email is required"
+                },
+
+                "password": {
+                    'valueType': "*password is not valid! should contain at least one digit,at least one lower case ,at least one upper case,at least 8 from the mentioned characters",
+                    'required': "*password is required"
+                }
+
+            });
     </script>
 </body>
 
