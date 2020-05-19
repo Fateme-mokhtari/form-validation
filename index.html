@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <title>form</title>
+</head>
+
+<body>
+
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">form validate</span>
+    </nav>
+    <div class="container pt-5">
+        <h1 class="form validate"></h1>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <form id="myForm" class="myform" name="myForm" novalidate>
+                    <div class="text-danger bg-light " id="errorList"></div>
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="farsi">Farsi char</label>
+                        <input type="text" class="form-control" id="farsi" placeholder="Enter name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="english">english char</label>
+                        <input type="text" class="form-control" id="english" placeholder="Enter name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile number </label>
+                        <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" data-min="6" data-max="10" class="form-control" id="password"
+                            placeholder="Password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/validate.js"></script>
+    <!-- <script type="text/javascript">
+
+
+
+        var feilds = {
+            "name": {
+                'valueType': 'text',
+                'required': true
+            },
+            "mobile": {
+                'valueType': 'mobileNumber',
+                'required': false
+            },
+            "email": {
+                'valueType': 'emailAaddress',
+                'required': true
+            },
+            "password": {
+                'valueType': 'password',
+                'required': true
+            }
+        };
+
+        var messages = {
+            "name": {
+                'valueType': "name is not valid!",
+                'required': "name is required"
+            },
+            "mobile": {
+                'valueType': "mobile number is not valid!",
+                'required': "mobile is required"
+            },
+            "email": {
+                'valueType': "email address is not valid!",
+                'required': "email is required"
+            },
+          
+            "password": {
+                'valueType': "password is not valid! should contain at least one digit,at least one lower case ,at least one upper case,at least 8 from the mentioned characters",
+                'required': "password is required"
+            }
+
+        };
+
+        $('#myForm').validator(feilds, messages);
+    </script> -->
+
+
+    <script type="text/javascript">
+
+
+
+    
+
+        $('#myForm').validator( 
+                feilds = {
+            "name": {
+                'valueType': 'text',
+                'required': true
+            },
+            "farsi": {
+                'valueType': 'persianChar',
+                'required': false
+            },
+            "english": {
+                'valueType': 'englishChar',
+                'required': false
+            },
+            "mobile": {
+                'valueType': 'mobileNumber',
+                'required': false
+            },
+            "email": {
+                'valueType': 'emailAaddress',
+                'required': true
+            },
+            "password": {
+                'valueType': 'password',
+                'required': true
+            }
+        },
+
+         messages = {
+            "name": {
+                'valueType': "*name is not valid!",
+                'required': "*name is required"
+            },
+            "farsi": {
+                'valueType': "*enter farsi charachter!",
+                'required': "*name is required"
+            },
+            "english": {
+                'valueType': "*enter english charachter!",
+                'required': "*name is required"
+            },
+            "mobile": {
+                'valueType': "*mobile number is not valid!",
+                'required': "*mobile is required"
+            },
+            "email": {
+                'valueType': "*email address is not valid!",
+                'required': "*email is required"
+            },
+          
+            "password": {
+                'valueType': "*password is not valid! should contain at least one digit,at least one lower case ,at least one upper case,at least 8 from the mentioned characters",
+                'required': "*password is required"
+            }
+
+        });
+    </script>
+</body>
+
+</html>
